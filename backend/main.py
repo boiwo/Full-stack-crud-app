@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from . import models, schemas, database
+import models, schemas, database
 
 
-from backend.database import SessionLocal, engine
+from database import SessionLocal, engine
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
 
