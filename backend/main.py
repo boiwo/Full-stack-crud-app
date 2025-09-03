@@ -16,7 +16,7 @@ app = FastAPI()
 # Add CORS middleware to allow React frontend to connect
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000","https://full-stack-crud-app-bxzl.onrender.com"], # React's default port
+    allow_origins=["http://localhost:3000","https://full-stack-crud-app-1.onrender.com"], # React's default port
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
